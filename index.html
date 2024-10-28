@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img
+                src="https://images.vexels.com/media/users/3/152818/isolated/preview/b6dc06a51a0b676d384694a7e8d96f15-icone-de-escola-plana-de-chapeu-de-formatura.png">
+            <h1>Calculadora de Médias</h1>
+        </header>
+        <section id="form-insert">
+            <form>
+                <input id="nomeatividade" type="text" placeholder="Nome da atividade" required>
+                <input id="notaatividade" type="number" placeholder="Nota" required max="10" min="0">
+                <button type="submit">Adicionar +</button>
+            </form>
+        </section>
+        <section id="form-results">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome da Atividade</th>
+                        <th>Nota da Atividade</th>
+                        <th>Aprovado?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            Média final
+                        </td>
+                        <td id="media-final-valor">
+                            ---
+                        </td>
+                        <td id="media-final-resultado">---
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
